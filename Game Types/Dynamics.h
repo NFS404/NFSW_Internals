@@ -47,7 +47,6 @@ namespace GameInternals {
          }
 
          struct IEntity {
-            virtual ~IEntity();
             virtual UMath::Vector3* GetPosition()                               = 0;
             virtual void SetPosition(UMath::Vector3* newPosition)               = 0;
             virtual UMath::Vector3* GetAngularVelocity()                        = 0;
