@@ -74,6 +74,10 @@ namespace GameInternals {
          };
          struct Matrix4 {
             Vector4 v0, v1, v2, v3;
+
+            operator float* () {
+               return reinterpret_cast<float*>(this);
+            }
          };
 
          static void ExtractXAxis(Vector4* pInVector4, Vector3* pOutVector3) {
